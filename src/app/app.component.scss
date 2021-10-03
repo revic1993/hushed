@@ -1,6 +1,26 @@
+@import './variable';
+
 .app-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
+    margin:auto;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    padding-bottom: 15px;
+}
+
+.hush-list-container{
+    padding-left: 15px;
+}
+
+.app-title{
+    color : $title-color;
+    font-size: 18px;
+}
+
+.divider{
+    width: 100%;
+    background-color: $divider;
+    height: 1px;
 }

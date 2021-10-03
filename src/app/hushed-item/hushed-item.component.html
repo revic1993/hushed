@@ -1,9 +1,9 @@
 <ng-container *ngIf="hushItem">
-    <div class="hushed-item" [ngClass]="{'muted' : hushItem.isHushed, 'unmuted' : !hushItem.isHushed}">
+    <div class="hushed-item" [ngClass]="{'muted' : hushItem.isHushed, 'unmuted' : !hushItem.isHushed,'incognito' : isIncognito}">
         <img src="{{hushItem.favIcon}}" alt="{{hushItem.siteName}}" class="ficon">
-        <span class="hush-item-title">{{hushItem.siteName || "Not available"}}</span>
+        <span class="hush-item-title">{{hushItem.siteName || "Not available" | uppercase}}</span>
         <img    class="icon hush-item-action" 
-                [src]="hushItem.isHushed ? '../../assets/mute.svg' : '../../assets/unmute.svg'"
+                [src]="getHushItemImg()"
                 alt="Muted">
     </div>
 </ng-container>

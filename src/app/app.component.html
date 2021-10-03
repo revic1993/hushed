@@ -1,3 +1,14 @@
 <div class="app-container">
-  <hushed-item [hushItem]="hushItem"></hushed-item>
+  <section class="hush-list-container">
+    <p class="app-title">Current Site</p>
+    <hushed-item [hushItem]="currentSite"></hushed-item>
+    <p class="app-title">Recently Muted</p>
+    <ng-container *ngFor="let hushItem of hushedItems">
+      <hushed-item [hushItem]="hushItem"></hushed-item>
+    </ng-container>
+  </section>
+  <div class="divider"></div>
+  <section class="hush-list-container">
+    <hushed-item [hushItem]="incognitoItem" [isIncognito]="true"></hushed-item>
+  </section>
 </div>
