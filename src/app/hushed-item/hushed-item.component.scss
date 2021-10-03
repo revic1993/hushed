@@ -1,0 +1,46 @@
+@use '../variable' as v;
+
+.hushed-item{
+    display: flex;
+    flex-direction: row;
+    min-width: 300px !important;
+    align-items: center;
+}
+
+.icon{
+    height: 30px !important;
+    width: auto;
+}
+
+.ficon{
+    height: 22px !important;
+}
+
+.muted{
+    .hush-item-action, .hush-item-title{
+        color : v.$muted-color !important;        
+    }
+}
+
+.unmuted{
+    .hush-item-action, .hush-item-title{
+        color : v.$unmuted-color !important;
+    }
+}
+
+.hush-item-title{
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.hush-item-action{
+    margin-left: auto;
+}
+
+.hush-item-action:hover{
+    cursor: pointer;
+    background-image : url('../../assets/background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
