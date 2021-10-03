@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 15px;
+    min-width: 350px;
 }
 
 .icon{
@@ -40,7 +41,7 @@
 }
 
 .hush-item-action{
-    margin-left: auto;
+    margin-left: auto;    
 }
 
 .hush-item-action:hover{

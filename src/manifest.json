@@ -1,0 +1,9 @@
+{
+    "name": "Hush",
+    "version": "1.0",
+    "description": "Hush the sites",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    }
+}

@@ -37,6 +37,6 @@ export class AppComponent {
   public incognitoItem : HushItem = {
     isHushed : false,
     siteName : "Incognito Tabs",
-    favIcon :"../assets/incognito.png"
+    favIcon :"../assets/incognito.svg"
   }
 }
